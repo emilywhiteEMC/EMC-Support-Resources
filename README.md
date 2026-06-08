@@ -89,3 +89,24 @@ Your content goes here in Markdown.
 ## Editing org settings (contact info)
 
 `config/orgs.json` holds each org's display name, contact info, and products. To update a contact or add an org, edit this file. Use a **role-based email alias** (e.g. `garland-support@...`) rather than a personal email where possible, so the address doesn't need to change when staff change.
+## Onboarding a new org
+ 
+None of these steps require a developer or any code changes.
+ 
+1. **Add the org to `config/orgs.json`.** Copy an existing org block (e.g. `garland-isd`), rename the key to the new org's slug (lowercase, hyphens, e.g. `plano-isd`), and fill in their `displayName`, `contact` info, and `products` list.
+2. **Tag any org-specific content.** If the new org uses an existing product whose content is tagged `all`, do nothing — they inherit it automatically. Only edit content files if the org has its own bespoke material; in that case add their slug to that file's `orgs` array (e.g. `orgs: ["plano-isd"]`).
+3. **Create their link.** The org is reached at `yoursite.com/?org=their-slug` (e.g. `yoursite.com/?org=plano-isd`). Give this link to whoever embeds it in the org's workbook or materials.
+That's the whole technical onboarding. The real effort is only in **authoring new content** — and only when the org uses a genuinely new product. An org using an existing product needs no new content at all.
+ 
+---
+ 
+## Adding a product to an existing org
+ 
+1. **Add the product** to that org's `products` array in `config/orgs.json`.
+2. **Add the product's content files** to `content/`, tagged `all` if every org with that product sees the same material, or the org's slug if it's their custom version. Give them a new `group` value (e.g. the product's name) — the site will show it as its own expandable section automatically.
+---
+ 
+## What requires a developer (the boundary)
+ 
+- **Adding more content of existing types** (`video`, `document`, `article`) → just files. No developer.
+- **Adding a brand-new *kind* of content** the site doesn't render yet (e.g. an interactive tool, a new format) → this needs a code change in the app. Flag it to the developer.
