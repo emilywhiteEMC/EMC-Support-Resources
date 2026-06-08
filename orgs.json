@@ -1,0 +1,19 @@
+{
+  "public": {
+    "displayName": "Economic Mobility Center",
+    "contact": {
+      "label": "General Support",
+      "email": "support@economicmobilitysystems.org"
+    },
+    "products": ["ccmr-weekly-workbook"]
+  },
+  "garland-isd": {
+    "displayName": "Garland ISD",
+    "contact": {
+      "label": "Your EMC Account Manager",
+      "name": "PLACEHOLDER_CONTACT_NAME",
+      "email": "PLACEHOLDER_GARLAND_SUPPORT_ALIAS"
+    },
+    "products": ["ccmr-weekly-workbook"]
+  }
+}
