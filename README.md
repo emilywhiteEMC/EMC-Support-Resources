@@ -48,6 +48,11 @@ All editing is done on the GitHub website — no software to install.
 ### To hide an item without deleting it
 Set `published: false` in its frontmatter. It stays in the repo but disappears from the site. This is how you draft something before it's ready.
 
+### To add a video
+1. Set `type: "video"`.
+2. In `link`, use the Vimeo **player** URL: `https://player.vimeo.com/video/VIDEO_ID` (the VIDEO_ID is the number at the end of the normal Vimeo link).
+3. **Check the video's Vimeo privacy settings allow embedding.** If the video is private or set to "only on vimeo.com," it will show as a blank/black box on the site even with the correct URL. In Vimeo, the video's privacy must allow embedding (public, or "hide from Vimeo but allow embedding"). This is the most common reason a video doesn't appear.
+
 ---
 
 ## Article template
