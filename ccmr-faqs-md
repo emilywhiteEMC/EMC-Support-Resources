@@ -9,20 +9,108 @@ type: "article"
 published: true
 ---
 
-## Frequently Asked Questions
+# CCMR On Track Weekly — FAQ
 
-**When does my workbook get updated each week?**
+*Answers to common questions about the workbook, the data, and how to use it. For a quick start, see the [One-Pager Guide](CCMR-On-Track-Weekly_One-Pager.md).*
 
-PLACEHOLDER — replace with the real answer.
+---
 
-**What do I do if a number looks wrong?**
+## Getting started
 
-Use the Report an Issue button. Describe what you see and what you expected to see. Do not edit the workbook file yourself — a corrected version will be delivered.
+### What is CCMR On Track Weekly?
+A weekly, campus-specific Excel workbook that shows student-level College, Career, and Military Readiness (CCMR) status and helps campus leaders, counselors, and advisors identify who needs intervention — then track whether interventions are working week over week.
 
-**Where do I find my campus data?**
+### Who is it for?
+Primarily **campus leaders, counselors, and advisors.** Teachers are secondary users. District leaders and superintendents are the buyers and may review it at a portfolio level.
 
-PLACEHOLDER — replace with the real answer.
+### How do I get it, and how often?
+You receive a refreshed workbook on your campus's configured weekly schedule. Delivery location is set during district onboarding (commonly Google Drive, Box, or a shared folder). Automated email may not work for some districts due to server-side restrictions, so confirm your delivery method with your district contact.
 
-**Who do I contact for help?**
+### How do I confirm I'm looking at the right file?
+Check the **Menu tab**, which shows your campus name and the week (e.g., "Lake Travis HS — 3/31/2026"). Always save the workbook to your team's shared location so everyone works from the same copy.
 
-See the Get Support tab for contact information and response-time expectations.
+---
+
+## Using the workbook
+
+### How do I filter to just my caseload?
+Go to the **All Data** tab and filter the **Counselor** or **Advisor** column to your name. That gives you a list of only your students, which you can then sort or filter further (e.g., by TSI status or GPA band). The **Counselors** and **Advisors** tabs also give you caseload-level rollups.
+
+### How is the workbook organized?
+Each tab is meant to function like a meeting agenda for one kind of readiness work:
+
+- **Menu** — table of contents and data freshness.
+- **Summary** — campus-wide overview (enrollment, TSI, pipeline, EOC, subgroups).
+- **All Data** — the master student list for filtering and building working lists.
+- **TSI By Assessment** — TSI outcomes by pathway, GPA band, and course grade.
+- **Counselors / Advisors** — caseload rollups and coaching views.
+- **Grade Levels** — readiness by "Class of" cohort.
+
+### What's the recommended way to use it each week?
+Orient (what changed), diagnose (who needs attention), act (assign interventions with clear owners), and revisit the same view next week to check movement. A 15–30 minute weekly meeting is the intended rhythm.
+
+### Can I build a list to hand off to staff?
+Yes. Filter All Data to the students you care about, then copy/paste into an email or a separate tracker. The workbook is designed to support action assignment even when the assignment itself happens outside the file.
+
+### Why don't my filters on one tab change the Summary?
+By design. Filters apply **only within the current tab.** The Summary always reflects the full campus so it stays a stable reference point. Charts within a tab will update as you filter that tab.
+
+---
+
+## Understanding the data
+
+### What does "TSI Met" mean and how is it determined?
+TSI Met indicates a student has demonstrated college readiness in **Math and/or ELAR** under the Texas Success Initiative. The workbook calculates it from the **highest qualifying score** a student has across TSIA2, SAT, or ACT, compared against the state cut scores:
+
+| Assessment | Math | ELAR |
+| :--- | :--- | :--- |
+| TSIA2 | CRC ≥ 950 | CRC ≥ 945 **and** Essay ≥ 5 |
+| SAT | Math ≥ 530 | EBRW ≥ 480 |
+| ACT | Math ≥ 19 | English ≥ 19 |
+
+A student is **TSI Met overall** when **both** Math and ELAR are met. A "Met by" label shows which test satisfied each subject (priority order: TSIA2 → SAT → ACT).
+
+### Why are some numbers shown as counts instead of percentages?
+The workbook intentionally uses **absolute counts** and an "N of total" format (e.g., "186 of 407"). Percentage-based targets don't work well for campuses already performing above benchmark, and counts make it clearer exactly how many students an action affects.
+
+### Why did a number change from last week?
+The workbook refreshes weekly from upstream sources, so changes are expected and usually good news — new scores posted, an application got submitted, a FAFSA was completed, or a record was corrected at the source. The "Updated" dates on the Menu tab show how current each feed is. If a change looks wrong rather than just new, report it (see below).
+
+### What do the colors mean?
+**Navy** indicates on-track / met, and **amber** indicates not met or off-track. Red/green combinations are deliberately avoided for color-vision accessibility, and the palette is meant to feel informative rather than judgmental.
+
+### Where does each data point come from?
+Each tab indicates its sources, and the Menu tab lists source feeds with their last-updated dates. Data flows from district and college systems through the Regional Data Hub into the workbook. The All Data tab includes a data-dictionary view showing where each field originates.
+
+---
+
+## Trust, quality, and troubleshooting
+
+### Why are some columns hidden?
+Columns are hidden when the underlying data is either **not available** or **not yet reliable** for your campus. Hiding them keeps the workbook credible and prevents decisions based on bad data. As data quality improves, hidden columns can be turned back on.
+
+### What do I do when a student record looks incorrect?
+Don't act on the questionable value. Submit a ticket through the support portal (the **Get Help** tab) with the student and field in question. Corrections are made upstream in the source systems, not by editing the workbook — editing your copy won't fix it and the change will be overwritten at the next refresh.
+
+### Can I edit the workbook?
+You can filter, sort, and copy data freely, and you can keep your own notes. But remember the file is **regenerated each week**, so any edits you make to the data or layout won't carry forward. Track assignments and notes in a separate place if you need them to persist.
+
+### Which fields are calculated versus reported directly?
+TSI Met (Math, ELAR, Overall), the "Met by" labels, GPA bands, and some readiness/college-prep labels are **calculated inside the workbook.** Most other fields (roster, demographics, scores, EOC results, pipeline status) are reported directly from source data. Calculated fields use consistent definitions week to week so you don't have to reinterpret them each refresh.
+
+### Will the workbook always have the same tabs?
+Release 1 includes Menu, Summary, All Data, TSI By Assessment, Counselors, Advisors, and Grade Levels. **Release 2** adds more topic tabs (CCMR Status/Trends, IBC Progress, Advanced Coursework, Dual Credit, College Credentials, Postsecondary Enrollment/Pipeline, and Path Form Completion). New tabs are added without breaking existing ones.
+
+---
+
+## Privacy and confidentiality
+
+### How sensitive is this data?
+Very. It contains protected student information and is labeled **"HIGHLY CONFIDENTIAL DATA — For use by campus leadership, college advisors, and counselors only."** Sharing it outside authorized users is prohibited and the product is operated under FERPA-aligned controls.
+
+### Who do I contact with questions?
+Submit a ticket through the **support portal** (the **Get Help** tab in the workbook). The portal covers everything — data corrections, access and confidentiality questions, product or usage issues, and clarifications about how a field is calculated or sourced.
+
+---
+
+*CCMR On Track Weekly · Release 1 · For a quick start, see the [One-Pager Guide](CCMR-On-Track-Weekly_One-Pager.md).*
