@@ -17,13 +17,7 @@ published: true
 
 ## Getting started
 
-### What is CCMR On Track Weekly?
-A weekly, campus-specific Excel workbook that shows student-level College, Career, and Military Readiness (CCMR) status and helps campus leaders, counselors, and advisors identify who needs intervention — then track whether interventions are working week over week.
-
-### Who is it for?
-Primarily **campus leaders, counselors, and advisors.** Teachers are secondary users. District leaders and superintendents are the buyers and may review it at a portfolio level.
-
-### How do I get it, and how often?
+### How do I get the woorkbook, and how often?
 You receive a refreshed workbook on your campus's configured weekly schedule. Delivery location is set during district onboarding (commonly Google Drive, Box, or a shared folder). Automated email may not work for some districts due to server-side restrictions, so confirm your delivery method with your district contact.
 
 ### How do I confirm I'm looking at the right file?
@@ -34,17 +28,8 @@ Check the **Menu tab**, which shows your campus name and the week (e.g., "Lake T
 ## Using the workbook
 
 ### How do I filter to just my caseload?
-Go to the **All Data** tab and filter the **Counselor** or **Advisor** column to your name. That gives you a list of only your students, which you can then sort or filter further (e.g., by TSI status or GPA band). The **Counselors** and **Advisors** tabs also give you caseload-level rollups.
+The **Counselors** and **Advisors** tabs give you caseload-level rollups by employee. 
 
-### How is the workbook organized?
-Each tab is meant to function like a meeting agenda for one kind of readiness work:
-
-- **Menu** — table of contents and data freshness.
-- **Summary** — campus-wide overview (enrollment, TSI, pipeline, EOC, subgroups).
-- **All Data** — the master student list for filtering and building working lists.
-- **TSI By Assessment** — TSI outcomes by pathway, GPA band, and course grade.
-- **Counselors / Advisors** — caseload rollups and coaching views.
-- **Grade Levels** — readiness by "Class of" cohort.
 
 ### What's the recommended way to use it each week?
 Orient (what changed), diagnose (who needs attention), act (assign interventions with clear owners), and revisit the same view next week to check movement. A 15–30 minute weekly meeting is the intended rhythm.
@@ -70,9 +55,6 @@ TSI Met indicates a student has demonstrated college readiness in **Math and/or 
 
 A student is **TSI Met overall** when **both** Math and ELAR are met. A "Met by" label shows which test satisfied each subject (priority order: TSIA2 → SAT → ACT).
 
-### Why are some numbers shown as counts instead of percentages?
-The workbook intentionally uses **absolute counts** and an "N of total" format (e.g., "186 of 407"). Percentage-based targets don't work well for campuses already performing above benchmark, and counts make it clearer exactly how many students an action affects.
-
 ### Why did a number change from last week?
 The workbook refreshes weekly from upstream sources, so changes are expected and usually good news — new scores posted, an application got submitted, a FAFSA was completed, or a record was corrected at the source. The "Updated" dates on the Menu tab show how current each feed is. If a change looks wrong rather than just new, report it (see below).
 
@@ -80,7 +62,7 @@ The workbook refreshes weekly from upstream sources, so changes are expected and
 **Navy** indicates on-track / met, and **amber** indicates not met or off-track. Red/green combinations are deliberately avoided for color-vision accessibility, and the palette is meant to feel informative rather than judgmental.
 
 ### Where does each data point come from?
-Each tab indicates its sources, and the Menu tab lists source feeds with their last-updated dates. Data flows from district and college systems through the Regional Data Hub into the workbook. The All Data tab includes a data-dictionary view showing where each field originates.
+Each tab indicates its sources, and the Menu tab lists source feeds with their last-updated dates. Data flows from district and college systems through the Regional Data Hub into the workbook. 
 
 ---
 
